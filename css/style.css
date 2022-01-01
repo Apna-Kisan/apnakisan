@@ -43,6 +43,9 @@ nav a:hover{
 	padding: 5px 2px; 
 
 } 
+.navbar-brand:hover{
+	background-color:black;
+}
 .nav-link:hover{
 	color: #fff;
 	background-color: green;
