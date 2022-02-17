@@ -2,23 +2,43 @@
 <html>
 <head>
 	
-	    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		
-		
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css\style.css">
+	    <?php include 'css/style.php' ?>
+	<?php include 'link/link.php' ?>
+	<?php
+include 'dbcon.php';
+if (isset($_POST['submit'])) {
+$name=$_POST['name'];
+$mobile=$_POST['mobile'];
+$email=$_POST['email'];
+$refrence=$_POST['massage'];
 
+$insertquery="insert into form_table(name,mobile,email,massage) values('$name','$mobile','$email','$refrence') ";
+$query=mysqli_query($con,$insertquery);
+if ($query) {
+	
+	?>
+	<script>
+		alert(" Data inserted successfully");
+	</script>
+ <?php
+
+} else {
+	echo "Data not insert";
+}
+
+
+
+
+}
+
+
+?>
 
 </head>
 <body>
      
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">APNA KISAN</a><div><img src="images\11.jpg"></div>
+  <a class="navbar-brand" href="index.php">APNA KISAN</a><div><img src="images\11.jpg"></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -105,29 +125,30 @@
 			<div class=" contactus col-lg-6 col-md-12 col-12">
 				
 
-				<form>
+			<form action="" method="POST" enctype="multipart/form-data">
 				<div class="form-group">
 					
-					<input type="text" class="form-control" id="Input Nmae" autocomplete="off" required placeholder="Enter Name here">
+					<input type="text" class="form-control" id="Input Name"  name="name" autocomplete="off" required placeholder="Enter Name here">
 				  </div>
 				  
+				 
+					
 				  <div class="form-group">
 					
-					<input type="email" class="form-control" id="InputEmail" autocomplete="off" required placeholder="Enter email">
+					<input type="mobile no." class="form-control" id="Input mobile no." name="mobile" autocomplete="off" required placeholder="Mobile No.">
+				  </div>
+				   <div class="form-group">
+					
+					<input type="email" class="form-control" id="InputEmail" name="email" autocomplete="off" required placeholder="Enter email">
 					</div>
-					
-				  <div class="form-group">
-					
-					<input type="mobile no." class="form-control" id="Input mobile no." autocomplete="off" required placeholder="Mobile No.">
-				  </div>
 				  
 				  <div class="form-group">
 					
-					<textarea class="form-control" rows="4"placeholder="Enter Message"></textarea>
+					<textarea class="form-control" rows="4"placeholder="Enter Message" name="massage"></textarea>
 				  </div>
 				  
 				  <div class=" form-button d-flex justify-content-center">
-				  <button type="submit" class="btn btn-primary">Submit</button>
+				  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 				</div>
 				</form>
 				</div>
@@ -164,10 +185,10 @@
 					<div>
 						<h3>NAVIGATION LINK</h3>
 						<li><a href="#about">About</a></li>
-						<li><a href="index.html">MSP Calculator</a></li>
+						<li><a href="index.php">MSP Calculator</a></li>
 					
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="services.php">Services</a></li>
+						<li><a href="contact.php">Contact</a></li>
 
 					</div>
 				</div>

@@ -2,41 +2,102 @@
 <html>
 <head>
 	<title></title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?php include 'css/style.php' ?>
+	<?php include 'link/link.php' ?>
+	<style type="text/css">
+		.header{
+	
+	width:100%;
+	height:100vh;
+	background-image: url('../images/farmer.jpg');
+	background-repeat:no-repeat;
+	background-image: 100% ;
 
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css\style.css">
+
+	background-size:100%,100%;
+	}
+	/***footer start***/
+	.footersection{
+		width: 100%;
+		height: auto;
+		padding: 50px 0 20px 0;
+		background:#000;
+		position: relative;
+
+	}
+	.footersection p {
+		color:#fff;
+
+	}
+	.footersection li a {
+		font-size:0.9rem;
+		line-height: 1.6;
+		font-weight: 400;
+		color: #fff;
+		
+		
+		
+	}
+	.footersection h3 {
+		font-size:1.2rem;
+		margin-bottom: 25px;
+		font-weight: 600;
+		color: #fff;
+		text-transform: uppercase;
+
+	}
+	.footersection li{
+		list-style: none;
+		
+	}
+	.list-group i{
+		color: #fff;
+		align-items: center;
+
+
+	}
+	.list-group  {
+	align-items: center;
+	display:inline-block;
+	justify-content:center;
+	margin:0px 600px 20px ;
+	padding: 0px 0 20px 0;
+	word-spacing: 20px;
+	}
+	</style>
+	
 </head>
 <body>
-<section class="header" id="topheader">
-	<div class="mainheader">
-		<div class="logo">
-			<h1>APNA KISAN </h1>
-			
-		</div>
-		<nav class="naveitem">
-					<a href="#about">about</a>
-					<a href="calculator.html">MSP Calculator</a>
-					
-					<a href="services.html">services</a>
-					<a href="contact.html">contact</a>
-		 </nav>
-		
-	</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.php">APNA KISAN</a><div><img src="images\11.jpg"></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	<div class="title">
-		<h1>*@ Welcome Farmer @*</h1>
-		
-	</div>
-	<div class="button">
-		<a href="#" class="btn"> LEARN MORE</a>
-		
-	</div>
-</section>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="calculator.php">MSP Calculator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.php">Service</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.php">Contact</a>
+      </li>
 
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+ <img src="images\farmer.jpg" width="100%" class="pb-5">
+ 
 	<!----three extra treepal T--->
  <div class="tripleT" id="#" >
 	<div class ="container mb-5 text-center">
@@ -158,10 +219,10 @@
 
 
 
-<!-- footer start******-->
-	<footer class="footersection" id="footerdiv">
+	<!-- footer start******-->
+  <footer class="footersection" id="footerdiv">
 		
-  <div class="list-group">
+<div class="list-group">
   <a  href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
   <a  href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
   <a  href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
@@ -181,10 +242,10 @@
 					<div>
 						<h3>NAVIGATION LINK</h3>
 						<li><a href="#about">About</a></li>
-						<li><a href="index.html">MSP Calculator</a></li>
+						<li><a href="index.php">MSP Calculator</a></li>
 					
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="services.php">Services</a></li>
+						<li><a href="contact.php">Contact</a></li>
 
 					</div>
 				</div>
@@ -199,16 +260,13 @@
 			
 		</div>
 		
-	
-	</footer>
+	</footer>  
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script><!--- cdns.com counterup 1.0.0 jquery copy script tagcopy--->
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script><!--- cdns.com waypoint 4.0.1 jquery copy script tagcopy--->
+
+
+
 </body>
 </html>
+
+

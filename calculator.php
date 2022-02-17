@@ -1,23 +1,15 @@
 <html>
 <head>
 	
-	    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		
-		
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css\style.css">
+	    <?php include 'css/style.php' ?>
+	<?php include 'link/link.php' ?>
 
 
 </head>
 <body>
      
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">APNA KISAN</a><div><img src="images\11.jpg"></div>
+  <a class="navbar-brand" href="index.php">APNA KISAN</a><div><img src="images\11.jpg"></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,13 +20,13 @@
         <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="calculator.html">MSP Calculator</a>
+        <a class="nav-link" href="calculator.php">MSP Calculator</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="services.html">Service</a>
+        <a class="nav-link" href="services.php">Service</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="contact.php">Contact</a>
       </li>
 
     </ul>

@@ -1,3 +1,6 @@
+<html>
+<head>
+<style>
 *{margin:0; padding:0; box-sizing:border-box; font-family: 'Josefin sans' , sans-serif;}
    .header{
 	
@@ -444,3 +447,7 @@ form:hover .form-button button{
 ::placeholder{
 	font-size:0.85rem;
 }
+</style>
+</head>
+
+</html>
